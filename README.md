@@ -29,14 +29,14 @@ git clone https://github.com/mik-varantsou/workout-tracker-telegram-bot.git
 cd workout-tracker-telegram-bot
 
 
-2. Install dependencies with vcpkg
+### 2. Install dependencies with vcpkg
 git clone https://github.com/microsoft/vcpkg.git
 cd vcpkg
 .\bootstrap-vcpkg.bat
 .\vcpkg.exe install sqlite3 sqlitecpp
 .\vcpkg.exe integrate install
 
-3. Configure and build the project
+### 3. Configure and build the project
 Make sure to replace path\to\vcpkg with the actual path to your vcpkg folder.
 
 cd path\to\your\workout-tracker-telegram-bot
@@ -47,7 +47,7 @@ cmake --build .
 
 
 
-Configuration
+## Configuration
 Create a .env file in the root of the project (same level as CMakeLists.txt).
 Add your Telegram bot token inside the .env file as follows:
 
@@ -57,11 +57,11 @@ Important: Keep your bot token private.
 
 
 
-Running the Bot
+## Running the Bot
 After successful build, run the executable:
 
 .\tgbot_new.exe
 The bot will connect to Telegram using the token from .env and start listening for commands.
 
-Contributing
+## Contributing
 Feel free to open issues or submit pull requests to improve the bot.
