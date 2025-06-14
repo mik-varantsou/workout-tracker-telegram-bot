@@ -1,70 +1,67 @@
 # Workout Tracker Telegram Bot
 
-A Telegram bot to track workouts and exercise progress.
-
-## Overview
-
-This bot allows users to log workout results, view their profile, and manage data through an easy-to-use Telegram interface.
+This is a Telegram bot for tracking your workout progress. It is written in C++ using the tgbot-cpp library and SQLite for data storage.
 
 ---
 
-## Requirements
+## Features
 
-- Windows / Linux
-- C++20 compatible compiler
-- [CMake](https://cmake.org/) 3.15 or higher
-- [vcpkg](https://github.com/microsoft/vcpkg) (recommended) to manage dependencies
-- Libraries:
-  - tgbot-cpp (included as a submodule under `external/`)
-  - SQLiteCpp
-  - SQLite3
+- Track workout sessions
+- Manage user profiles
+- Custom keyboards for ease of use
+- Multilanguage support (planned)
 
 ---
 
-## Installing dependencies with vcpkg (recommended)
+## Prerequisites
 
-```bash
-git clone https://github.com/microsoft/vcpkg.git
-cd vcpkg
-./bootstrap-vcpkg.sh  # Linux/macOS
-.\bootstrap-vcpkg.bat # Windows
-
-./vcpkg install sqlite3 sqlitecpp
+- C++20 compatible compiler (MSVC, GCC, Clang)
+- CMake (version 3.15 or higher)
+- Git
+- [vcpkg](https://github.com/microsoft/vcpkg) package manager
 
 ---
-## Configuration
-Create a .env file in the root of the project with the following content:
 
-BOT_TOKEN=YOUR_TELEGRAM_BOT_TOKEN
+## Setup and Build
 
-## Building the project
-Clone this repository:
+### 1. Clone the repository
 git clone https://github.com/mik-varantsou/workout-tracker-telegram-bot.git
 cd workout-tracker-telegram-bot
 
 
-Create a build directory and navigate to it:
+2. Install dependencies with vcpkg
+git clone https://github.com/microsoft/vcpkg.git
+cd vcpkg
+.\bootstrap-vcpkg.bat
+.\vcpkg.exe install sqlite3 sqlitecpp
+.\vcpkg.exe integrate install
+
+3. Configure and build the project
+Make sure to replace path\to\vcpkg with the actual path to your vcpkg folder.
+
+cd path\to\your\workout-tracker-telegram-bot
 mkdir build
 cd build
-
-Run CMake and build the project:
-cmake .. -DCMAKE_TOOLCHAIN_FILE=path_to_vcpkg/scripts/buildsystems/vcpkg.cmake
+cmake .. -DCMAKE_TOOLCHAIN_FILE=path\to\vcpkg\scripts\buildsystems\vcpkg.cmake
 cmake --build .
 
-Replace path_to_vcpkg with the actual path to your vcpkg installation.
 
-Running the bot
-Run the compiled executable:
 
-bash
-Copy
-Edit
-./tgbot_new   # or tgbot_new.exe on Windows
-Make sure the .env file with your bot token is located alongside the executable.
+Configuration
+Create a .env file in the root of the project (same level as CMakeLists.txt).
+Add your Telegram bot token inside the .env file as follows:
 
-License
-This project is licensed under the MIT License.
+BOT_TOKEN=your_telegram_bot_token_here
 
-Contact
-If you have any questions or suggestions, please open an issue or contact me directly.
+Important: Keep your bot token private.
 
+
+
+Running the Bot
+After successful build, run the executable:
+
+.\tgbot_new.exe
+The bot will connect to Telegram using the token from .env and start listening for commands.
+
+Contributing
+Feel free to open issues or submit pull requests to improve the bot.
