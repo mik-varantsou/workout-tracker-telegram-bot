@@ -30,24 +30,27 @@ cd vcpkg
 .\bootstrap-vcpkg.bat # Windows
 
 ./vcpkg install sqlite3 sqlitecpp
-Configuration
+
+---
+## Configuration
 Create a .env file in the root of the project with the following content:
 
 BOT_TOKEN=YOUR_TELEGRAM_BOT_TOKEN
-Building the project
+
+## Building the project
 Clone this repository:
-
-
 git clone https://github.com/mik-varantsou/workout-tracker-telegram-bot.git
 cd workout-tracker-telegram-bot
-Create a build directory and navigate to it:
 
+
+Create a build directory and navigate to it:
 mkdir build
 cd build
-Run CMake and build the project:
 
+Run CMake and build the project:
 cmake .. -DCMAKE_TOOLCHAIN_FILE=path_to_vcpkg/scripts/buildsystems/vcpkg.cmake
 cmake --build .
+
 Replace path_to_vcpkg with the actual path to your vcpkg installation.
 
 Running the bot
