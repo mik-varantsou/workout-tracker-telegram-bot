@@ -26,6 +26,7 @@ This is a Telegram bot for tracking your workout progress. It is written in C++ 
 
 ### 1. Clone the repository
 git clone https://github.com/mik-varantsou/workout-tracker-telegram-bot.git
+
 cd workout-tracker-telegram-bot
 
 
