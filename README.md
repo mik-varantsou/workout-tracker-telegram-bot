@@ -110,6 +110,7 @@ If you find bugs, have ideas, or want to contribute code — feel free to open i
 
 ## Contacts
 Created by mik-varantsou
+
 For questions or suggestions, please open an issue or contact me via GitHub.
 
 
