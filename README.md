@@ -6,7 +6,7 @@ This is a Telegram bot for tracking your workout progress. It is written in C++ 
 
 ## Features
 
-- Track workout sessions  
+- Track workout progress  
 - Manage user profiles  
 - Custom keyboards for ease of use  
 - Multilanguage support
