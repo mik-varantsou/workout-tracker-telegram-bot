@@ -9,16 +9,26 @@ This is a Telegram bot for tracking your workout progress. It is written in C++ 
 - Track workout sessions  
 - Manage user profiles  
 - Custom keyboards for ease of use  
-- Multilanguage support (planned)  
+- Multilanguage support
+- Group chat support (planned)   
 
 ---
 
 ## Prerequisites
 
 - C++20 compiler (MSVC, GCC, Clang)  
-- CMake 3.15+  
+- CMake 3.18+  
 - Git  
 - [vcpkg](https://github.com/microsoft/vcpkg) package manager  
+
+---
+
+## How to create your Telegram bot and get a token
+
+1. Open Telegram and find [BotFather](https://t.me/BotFather)  
+2. Send `/newbot` command  
+3. Follow instructions to set the bot name and username  
+4. Copy the generated **bot token** — you will need it for `.env` configuration
 
 ---
 
@@ -92,5 +102,9 @@ After building, run the executable from the build folder:
 ## Contribution and Support
 If you find bugs, have ideas, or want to contribute code — feel free to open issues or submit pull requests.
 
-If you have any questions or need help, just ask!
-Good luck and enjoy tracking your workouts! 💪
+## Contacts
+Created by mik-varantsou
+For questions or suggestions, please open an issue or contact me via GitHub.
+
+
+
