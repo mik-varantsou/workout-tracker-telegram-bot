@@ -1,5 +1,7 @@
 	#pragma once
 
+	#define _WIN32_WINNT 0x0601
+
 	#include <cstdio> // like iostream, but with printf, fopen etc.
 	#include <iostream> // cout, cin, cerr
 	#include <chrono> // time

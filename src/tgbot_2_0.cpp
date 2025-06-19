@@ -241,7 +241,7 @@ int main() {
         SQLite::Statement query(db, "SELECT state, exercise FROM users WHERE user_id = ?");
         query.bind(1, userId);
         if (!query.executeStep()) {
-            bot.getApi().sendMessage(userId, getTranslation("error_start", language));
+            bot.getApi().sendMessage(userId, getTranslation("start_error", language));
             return;
         }
         onUserMessage(userId);
