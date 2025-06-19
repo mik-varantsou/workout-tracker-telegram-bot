@@ -41,7 +41,13 @@ git clone https://github.com/mik-varantsou/workout-tracker-telegram-bot.git
 cd workout-tracker-telegram-bot
 ```
 
-### 2. Install dependencies with vcpkg
+### 2. Initialize submodules
+
+```bash
+git submodule update --init --recursive
+```
+
+### 3. Install dependencies with vcpkg
 If you don’t have vcpkg installed yet, clone and bootstrap it first:
 ```bash
 git clone https://github.com/microsoft/vcpkg.git
@@ -63,7 +69,7 @@ Integrate vcpkg with your system (optional but recommended):
 ```
 
 
-### 3. Configure and build the project
+### 4. Configure and build the project
 Make a build directory and generate build files with CMake, specifying the vcpkg toolchain file. Replace path\to\vcpkg with your actual vcpkg folder path:
 
 ```bash
