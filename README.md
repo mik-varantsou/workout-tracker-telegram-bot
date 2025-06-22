@@ -1,6 +1,7 @@
 # Workout Tracker Telegram Bot
 
-This is a Telegram bot for tracking your workout progress. It is written in C++ using the [tgbot-cpp](https://github.com/reo7sp/tgbot-cpp) library and SQLite for data storage.
+A multilingual Telegram bot for tracking workout progress and managing user fitness profiles. Built in modern C++ with `tgbot-cpp`, `SQLite`, and `CMake`.  
+Includes inline keyboards for better UX and modular code structure.
 
 ---
 
@@ -10,8 +11,19 @@ This is a Telegram bot for tracking your workout progress. It is written in C++ 
 - Manage user profiles  
 - Custom keyboards for ease of use  
 - Multilanguage support
-- Group chat support (planned)   
+- Group chat support (planned)
+  
+---
 
+## Tech Stack
+- C++20
+- tgbot-cpp
+- SQLite
+- CMake
+- Git & GitHub Actions
+- vcpkg
+
+  
 ---
 
 ## Prerequisites
