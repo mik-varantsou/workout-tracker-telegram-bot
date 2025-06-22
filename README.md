@@ -37,16 +37,16 @@ Includes inline keyboards for better UX and modular code structure.
 ## 📷 Screenshots
 
 ### 🏁 Start Menu
-![Main Menu](./assets/main-menu.png)
+![Main Menu](./assets/main-menu.jpg)
 
 ### 🏋️ Exercise Management
-![Exercise Menu](./assets/exercise-menu.png)
+![Exercise Menu](./assets/exercise-menu.jpg)
 
 ### ➕ Add New Exercise
-![Add Button](./assets/add-button.png)
+![Add Button](./assets/add-button.jpg)
 
 ### ✅ Updated Menu
-![Updated Menu](./assets/exercise-updated.png)
+![Updated Menu](./assets/exercise-updated.jpg)
 
 
 ---
