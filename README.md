@@ -34,6 +34,22 @@ Includes inline keyboards for better UX and modular code structure.
 - [vcpkg](https://github.com/microsoft/vcpkg) package manager  
 
 ---
+## 📷 Screenshots
+
+### 🏁 Start Menu
+![Main Menu](./assets/main-menu.png)
+
+### 🏋️ Exercise Management
+![Exercise Menu](./assets/exercise-menu.png)
+
+### ➕ Add New Exercise
+![Add Button](./assets/add-button.png)
+
+### ✅ Updated Menu
+![Updated Menu](./assets/exercise-updated.png)
+
+
+---
 
 ## How to create your Telegram bot and get a token
 
